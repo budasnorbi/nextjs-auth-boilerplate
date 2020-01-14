@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+        "react/prop-types": [0],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        // Indent JSX with 4 spaces
+        "react/jsx-indent": ["error", 4],
+        // Indent props with 4 spaces
+        "react/jsx-indent-props": ["error", 4],
+        "jsx-a11y/label-has-for": [
+            2,
+            {
+                "required": {
+                    "some": ["nesting", "id"]
+                }
+            }
+        ]
+    }
+}

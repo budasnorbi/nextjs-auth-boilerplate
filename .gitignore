@@ -1,0 +1,6 @@
+node_modules/
+margo-template/
+package-lock.json
+.next/
+.env
+.env.build
