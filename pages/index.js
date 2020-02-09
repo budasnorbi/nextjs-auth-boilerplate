@@ -9,7 +9,7 @@ const Index = () => {
                 <button type="button">Bejelentkezés</button>
             </Link>
             <Link href="/register">
-                <button type="button">Bejelentkezés</button>
+                <button type="button">Regisztráció</button>
             </Link>
         </div>
     )
